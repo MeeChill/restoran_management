@@ -38,4 +38,6 @@ Route::get('orders', [OrderController::class, 'index'])->name('orders.index'); /
 Route::get('orders/create', [OrderController::class, 'create'])->name('orders.create'); // Form untuk membuat pesanan
 Route::post('orders', [OrderController::class, 'store'])->name('orders.store'); // Menyimpan pesanan
 Route::get('orders/{order}', [OrderController::class, 'show'])->name('orders.show'); // Menampilkan detail pesanan
+Route::get('orders/{order}/edit', [OrderController::class, 'edit'])->name('orders.edit'); // Form untuk mengedit order
+Route::put('orders/{order}', [OrderController::class, 'update'])->name('orders.update'); // Mengupdate order
 Route::delete('/orders/{order}', [OrderController::class, 'destroy'])->name('orders.destroy');

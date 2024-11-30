@@ -1,0 +1,19 @@
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color : #343a40;
+    color: white;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.btn {
+    border-radius: 5px;
+}
+
+
